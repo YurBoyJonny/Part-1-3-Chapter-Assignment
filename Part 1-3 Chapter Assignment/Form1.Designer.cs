@@ -36,13 +36,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.lblMessage = new System.Windows.Forms.Label();
+            this.txtHeight = new System.Windows.Forms.TrackBar();
+            this.txtAge = new System.Windows.Forms.NumericUpDown();
+            this.lblName = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAge)).BeginInit();
             this.SuspendLayout();
             // 
             // txtName
@@ -102,28 +102,28 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Enter height: ";
             // 
-            // trackBar1
+            // txtHeight
             // 
-            this.trackBar1.Location = new System.Drawing.Point(551, 12);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(120, 45);
-            this.trackBar1.TabIndex = 5;
+            this.txtHeight.Location = new System.Drawing.Point(551, 12);
+            this.txtHeight.Name = "txtHeight";
+            this.txtHeight.Size = new System.Drawing.Size(120, 45);
+            this.txtHeight.TabIndex = 5;
             // 
-            // numericUpDown1
+            // txtAge
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(305, 13);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 6;
+            this.txtAge.Location = new System.Drawing.Point(305, 13);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(120, 20);
+            this.txtAge.TabIndex = 6;
             // 
-            // lblMessage
+            // lblName
             // 
-            this.lblMessage.AutoSize = true;
-            this.lblMessage.Location = new System.Drawing.Point(83, 60);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(80, 13);
-            this.lblMessage.TabIndex = 7;
-            this.lblMessage.Text = "Name message";
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(83, 60);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(80, 13);
+            this.lblName.TabIndex = 7;
+            this.lblName.Text = "Name message";
             // 
             // lblAge
             // 
@@ -150,9 +150,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblAge);
-            this.Controls.Add(this.lblMessage);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.txtAge);
+            this.Controls.Add(this.txtHeight);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -160,8 +160,8 @@
             this.Controls.Add(this.txtName);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAge)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,9 +176,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label lblMessage;
+        private System.Windows.Forms.TrackBar txtHeight;
+        private System.Windows.Forms.NumericUpDown txtAge;
+        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.Label label6;
     }
