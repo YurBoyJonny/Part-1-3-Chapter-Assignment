@@ -20,20 +20,15 @@ namespace Part_1_3_Chapter_Assignment
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             string name = txtName.Text;
-            lblName.Text = "Greetings " + name;
 
 
 
 
 
 
+            lblMessage.Text = "Greetings " + name + " you are ";
 
-
-           //Int32.TryParse
-
-           // Double TryParse()
-
-
+            
         }
     }
 }

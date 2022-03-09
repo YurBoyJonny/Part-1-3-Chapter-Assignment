@@ -38,9 +38,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtHeight = new System.Windows.Forms.TrackBar();
             this.txtAge = new System.Windows.Forms.NumericUpDown();
-            this.lblName = new System.Windows.Forms.Label();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.lblScroll = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAge)).BeginInit();
             this.SuspendLayout();
@@ -55,13 +56,14 @@
             // btnSubmit
             // 
             this.btnSubmit.BackColor = System.Drawing.Color.DarkRed;
-            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 90F);
+            this.btnSubmit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F);
             this.btnSubmit.ForeColor = System.Drawing.Color.Black;
-            this.btnSubmit.Location = new System.Drawing.Point(12, 108);
+            this.btnSubmit.Image = global::Part_1_3_Chapter_Assignment.Properties.Resources.submitbuttone;
+            this.btnSubmit.Location = new System.Drawing.Point(12, 63);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(776, 330);
+            this.btnSubmit.Size = new System.Drawing.Size(776, 255);
             this.btnSubmit.TabIndex = 1;
-            this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
@@ -116,41 +118,50 @@
             this.txtAge.Size = new System.Drawing.Size(120, 20);
             this.txtAge.TabIndex = 6;
             // 
-            // lblName
+            // lblMessage
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(83, 60);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(80, 13);
-            this.lblName.TabIndex = 7;
-            this.lblName.Text = "Name message";
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F);
+            this.lblMessage.Location = new System.Drawing.Point(12, 331);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(135, 36);
+            this.lblMessage.TabIndex = 7;
+            this.lblMessage.Text = "Message";
             // 
             // lblAge
             // 
             this.lblAge.AutoSize = true;
             this.lblAge.Location = new System.Drawing.Point(302, 60);
             this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(71, 13);
+            this.lblAge.Size = new System.Drawing.Size(0, 13);
             this.lblAge.TabIndex = 8;
-            this.lblAge.Text = "Age message";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(548, 60);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 13);
+            this.label6.Size = new System.Drawing.Size(0, 13);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Height message";
+            // 
+            // lblScroll
+            // 
+            this.lblScroll.AutoSize = true;
+            this.lblScroll.Location = new System.Drawing.Point(678, 19);
+            this.lblScroll.Name = "lblScroll";
+            this.lblScroll.Size = new System.Drawing.Size(13, 13);
+            this.lblScroll.TabIndex = 10;
+            this.lblScroll.Text = "0";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblScroll);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblAge);
-            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.txtAge);
             this.Controls.Add(this.txtHeight);
             this.Controls.Add(this.label3);
@@ -178,9 +189,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TrackBar txtHeight;
         private System.Windows.Forms.NumericUpDown txtAge;
-        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblScroll;
     }
 }
 
