@@ -16,19 +16,25 @@ namespace Part_1_3_Chapter_Assignment
         {
             InitializeComponent();
         }
-
-        private void btnSubmit_Click(object sender, EventArgs e)
+            private void btnSubmit_Click(object sender, EventArgs e)
         {
             string name = txtName.Text;
+            string age = txtAge.Text;
+            string height = txtHeight.Text;
 
+            int age1 = Convert.ToInt32(age);
+            int averageAge = 82;
+            int ageBelow;
+            ageBelow = averageAge - age1;
 
+            double tallest = 2.72;
+            double height1 = Convert.ToDouble(height);
+            double heightBelow;
+            heightBelow = tallest - height1;
+            heightBelow = Math.Round(heightBelow, 2);
 
-
-
-
-            lblMessage.Text = "Greetings " + name + " you are ";
-
-            
+            lblMessage.Text = "Greetings " + name + ". You are " + ageBelow + " years below life expectancy." 
+                + " You are " + heightBelow + "m shorter than the tallest person.";
         }
     }
 }
