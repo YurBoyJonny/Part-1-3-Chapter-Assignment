@@ -28,7 +28,8 @@ namespace Part_1_3_Chapter_Assignment
             ageBelow = averageAge - age1;
 
             double tallest = 2.72;
-            double height1 = Convert.ToDouble(height);
+            double height1;
+            double.TryParse(height, out height1);
             double heightBelow;
             heightBelow = tallest - height1;
             heightBelow = Math.Round(heightBelow, 2);
